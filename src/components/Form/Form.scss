@@ -1,6 +1,42 @@
 @import '../../fonts/fuentes.scss';
+@import "../../estilos/colors.scss";
 
-.parrafo{
-    font-family:$Cyberpunk;
-    background-color:red;
+.form-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.form{
+    width: 80%;
+    margin: 0 auto;
+    padding:20px;
+    transform: translateY(-30%);
+    font-family: $Audiowide;
+    letter-spacing:2px;
+    font-size: 22px;
+    text-shadow: 5px 5px 2px $primary;
+}
+.form__title{
+    font-family: $Cyberpunk;
+    text-align: center;
+    text-shadow: 5px 5px 2px $primary;
+    font-size: $titleSize;
+}
+
+.input:focus{
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid $primary;
+}
+
+.btn{
+    letter-spacing: 2px;
+    padding: 115px auto !important;
+}
+
+.btn:hover{
+    transition: all .5s;
+    transform: scale(1.1);
 }

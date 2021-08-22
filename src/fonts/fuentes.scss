@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
 @font-face{
     font-family:Cyberpunk;
     src: url(./Cyberpunk-Regular.ttf) format('truetype');
@@ -9,5 +11,15 @@
     src:url(./Act-Of-Rejection.ttf) format('truetype');
 }
 
+@font-face{
+    font-family:PROMETHEUS;
+    src:url(./PROMETHEUS.ttf) format('truetype');
+}
+
+
 $Cyberpunk:Cyberpunk;
 $Rejection:Act of Rejection;
+$Prometheus:PROMETHEUS;
+$Audiowide:'Audiowide', cursive;
+
+$titleSize:42px !important;
