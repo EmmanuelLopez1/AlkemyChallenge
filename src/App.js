@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import {Form} from './components/Form/Form'
+import {FormContainer} from './components/FormContainer/FormContainer'
 
 function App() {
   return (
    <>
-    <Form/>
+    <FormContainer/>
    </>
   );
 }

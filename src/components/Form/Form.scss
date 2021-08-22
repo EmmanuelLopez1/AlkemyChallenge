@@ -1,42 +1,61 @@
-@import '../../fonts/fuentes.scss';
-@import "../../estilos/colors.scss";
+@import "../../fonts/fuentes.scss";
+@import "../../estilos/styles.scss";
 
-.form-container{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
+.form-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-.form{
+.form {
+  width: auto;
+  margin: 0 auto;
+  padding: 20px;
+  transform: translateY(-30%);
+  font-family: $Audiowide;
+  letter-spacing: 2px;
+  font-size: 22px;
+  text-shadow: 5px 5px 2px $primary;
+  box-shadow: 30px 30px 10000px $secondary, 1px 1px 500px $primary, -1px 1px 500px $primary, 3px 3px 1px $danger;
+}
+.form__title {
+  font-family: $Cyberpunk;
+  text-align: center;
+  text-shadow: 5px 5px 2px $primary;
+  letter-spacing: 1px;
+  font-size: $titleSizeMobile;
+}
+
+
+.btn {
+  letter-spacing: 2px;
+  padding: 115px auto !important;
+  background-color: $dark2;
+}
+
+.btn:hover {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+@media (min-width: 500px) {
+  .form {
     width: 80%;
-    margin: 0 auto;
-    padding:20px;
-    transform: translateY(-30%);
-    font-family: $Audiowide;
-    letter-spacing:2px;
-    font-size: 22px;
-    text-shadow: 5px 5px 2px $primary;
-}
-.form__title{
-    font-family: $Cyberpunk;
-    text-align: center;
-    text-shadow: 5px 5px 2px $primary;
-    font-size: $titleSize;
+  }
+  .form__title{
+      font-size: $titleSizeDesktop;
+  }
 }
 
-.input:focus{
-    outline: none;
-    border-radius: 5px;
-    border: 2px solid $primary;
+@media(min-width: 1024px) {
+    .form{
+        width: 50%;
+    }
 }
 
-.btn{
-    letter-spacing: 2px;
-    padding: 115px auto !important;
-}
-
-.btn:hover{
-    transition: all .5s;
-    transform: scale(1.1);
+@media(min-width: 1400px) {
+    .form{
+        width: 40%;
+    }
 }
