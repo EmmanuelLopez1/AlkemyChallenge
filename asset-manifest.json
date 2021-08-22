@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/EmmanuelLopez1/alkemyChallenge/static/css/main.d1521679.chunk.css",
-    "main.js": "/EmmanuelLopez1/alkemyChallenge/static/js/main.283b31e3.chunk.js",
-    "main.js.map": "/EmmanuelLopez1/alkemyChallenge/static/js/main.283b31e3.chunk.js.map",
+    "main.css": "/EmmanuelLopez1/alkemyChallenge/static/css/main.64a2e185.chunk.css",
+    "main.js": "/EmmanuelLopez1/alkemyChallenge/static/js/main.78b41741.chunk.js",
+    "main.js.map": "/EmmanuelLopez1/alkemyChallenge/static/js/main.78b41741.chunk.js.map",
     "runtime-main.js": "/EmmanuelLopez1/alkemyChallenge/static/js/runtime-main.8133030b.js",
     "runtime-main.js.map": "/EmmanuelLopez1/alkemyChallenge/static/js/runtime-main.8133030b.js.map",
-    "static/js/2.fcefa8e9.chunk.js": "/EmmanuelLopez1/alkemyChallenge/static/js/2.fcefa8e9.chunk.js",
-    "static/js/2.fcefa8e9.chunk.js.map": "/EmmanuelLopez1/alkemyChallenge/static/js/2.fcefa8e9.chunk.js.map",
+    "static/js/2.139b6d78.chunk.js": "/EmmanuelLopez1/alkemyChallenge/static/js/2.139b6d78.chunk.js",
+    "static/js/2.139b6d78.chunk.js.map": "/EmmanuelLopez1/alkemyChallenge/static/js/2.139b6d78.chunk.js.map",
     "static/js/3.aae538db.chunk.js": "/EmmanuelLopez1/alkemyChallenge/static/js/3.aae538db.chunk.js",
     "static/js/3.aae538db.chunk.js.map": "/EmmanuelLopez1/alkemyChallenge/static/js/3.aae538db.chunk.js.map",
     "index.html": "/EmmanuelLopez1/alkemyChallenge/index.html",
-    "static/css/main.d1521679.chunk.css.map": "/EmmanuelLopez1/alkemyChallenge/static/css/main.d1521679.chunk.css.map",
-    "static/js/2.fcefa8e9.chunk.js.LICENSE.txt": "/EmmanuelLopez1/alkemyChallenge/static/js/2.fcefa8e9.chunk.js.LICENSE.txt",
-    "static/media/Form.scss": "/EmmanuelLopez1/alkemyChallenge/static/media/Cyberpunk-Regular.ce09ddf4.ttf",
+    "static/css/main.64a2e185.chunk.css.map": "/EmmanuelLopez1/alkemyChallenge/static/css/main.64a2e185.chunk.css.map",
+    "static/js/2.139b6d78.chunk.js.LICENSE.txt": "/EmmanuelLopez1/alkemyChallenge/static/js/2.139b6d78.chunk.js.LICENSE.txt",
+    "static/media/Form.scss": "/EmmanuelLopez1/alkemyChallenge/static/media/PROMETHEUS.e3f97d79.ttf",
     "static/media/logo.6ce24c58.svg": "/EmmanuelLopez1/alkemyChallenge/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8133030b.js",
-    "static/js/2.fcefa8e9.chunk.js",
-    "static/css/main.d1521679.chunk.css",
-    "static/js/main.283b31e3.chunk.js"
+    "static/js/2.139b6d78.chunk.js",
+    "static/css/main.64a2e185.chunk.css",
+    "static/js/main.78b41741.chunk.js"
   ]
 }
