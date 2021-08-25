@@ -1,8 +1,9 @@
-import React from 'react'
+import React,{forwardRef} from 'react'
 import './Input.scss'
 
-export const Input = ({type, placeholder, id})=>{
+export const Input = forwardRef(
+    ({type, placeholder, id}, ref) =>{
     return(
-        <input type={type} className="input form-control mt-2"  id={id}  placeholder={placeholder}/>
+        <input type={type} className="input form-control mt-2"  id={id}  placeholder={placeholder} ref={ref}/>
     )
-}
+}) 

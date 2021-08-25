@@ -1,7 +1,16 @@
-import React from "react";
-import "./Form.scss";
+import React, {useContext, useState, createRef} from "react";
 import {Input} from "../Input/Input"
+import {FormContext} from '../../context/FormContext'
+import "./Form.scss";
+
+
+
+
 export const Form = () => {
+    const mail = createRef()
+    const password = createRef()
+    const {validarFormulario} = useContext(FormContext)
+
     return (
         <>
             <div className="form-container">
@@ -11,19 +20,24 @@ export const Form = () => {
                         <label htmlFor="exampleInputEmail1" className="form-label">
                             Email address
                         </label>
-                        <Input type="text" placeholder="Email" id="exampleInputEmail1"/>
+                        <Input ref={mail} type="text" placeholder="Email" id="exampleInputEmail1"/>
                     </div>
                     <div className="mb-3 w-100 text-center mt-3">
                         <label htmlFor="exampleInputPassword1" className="form-label">
                             Password
                         </label>
-                        <Input type="password" placeholder="Password" id="exampleInputPassword1"/>
+                        <Input ref={password} type="password" placeholder="Password" id="exampleInputPassword1"/>
                     </div>
-                    <button type="submit" className="btn mx-auto d-block mt-4">
+                    <button type="submit" className="btn mx-auto d-block mt-4" onClick={(e)=>{
+                        e.preventDefault()
+                        validarFormulario(mail, password)
+                        }}>
+
                         Submit
                     </button>
                 </form>
             </div>
+
         </>
     );
 };
