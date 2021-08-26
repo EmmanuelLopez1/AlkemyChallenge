@@ -27,6 +27,9 @@
   font-size: $titleSizeMobile;
 }
 
+.error {
+  display:none;
+}
 
 .btn {
   letter-spacing: 2px;
@@ -59,3 +62,5 @@
         width: 40%;
     }
 }
+
+
