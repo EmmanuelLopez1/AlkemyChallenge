@@ -37,7 +37,7 @@ export const Form = () => {
                         e.preventDefault()
                         validarFormulario(mail, password, mailWarning, passwordWarning)
                         }}>
-
+                            
                         Submit
                     </button>
                 </form>

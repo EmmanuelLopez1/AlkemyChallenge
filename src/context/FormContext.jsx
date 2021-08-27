@@ -1,4 +1,5 @@
 import React, {useState, createContext} from 'react';
+import {styles} from '../estilos/styles'
 export const FormContext = createContext()
 
 
@@ -29,7 +30,7 @@ export const FormProvider = ({children})=>{
     }
 
     const mostrarErrorDeValidacion = (input, elementWarning)=>{
-        input.style.border = '2px solid red';
+        input.style.border = `2px solid ${styles.warning}`;
         elementWarning.style.display = 'block'
     }
 
@@ -37,6 +38,8 @@ export const FormProvider = ({children})=>{
         input.style.border = '0px'
         elementWarning.style.display = 'none'
     }
+
+    
 
     return(
         <FormContext.Provider value={{validarFormulario}}>
