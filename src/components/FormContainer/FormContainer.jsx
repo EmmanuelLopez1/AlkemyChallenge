@@ -6,7 +6,7 @@ import { Loader } from "../Loader/Loader";
 
 export const FormContainer = () => {
     const { loader, alert, error } = useContext(FormContext);
-    const messageError = `Error al cargar la pagina error: ${error}`
+    const messageError = `Error ${error} al cargar la pagina.`
 
     return (
     <>

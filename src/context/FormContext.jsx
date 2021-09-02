@@ -66,19 +66,20 @@ export const FormProvider = ({ children }) => {
         method: "post",
         url: url,
         data:  {
-          email: "challenge@alkemy.org",
+          email: "challenge@alkemy.or",
           password: "react",
         },
       })
         .then((res) => {
-          console.log(res);
-          console.log(typeof res.config.data);
-          console.log(res.config.data);
           setLoader(false)
         })
-        .catch((error) => {
+        .catch((err) => {
+          console.log(err.response.status);
           setAlert(true)
-          console.log(error);
+          setError(err.response.status)
+        })
+        .finally(()=>{
+          setLoader(false)
         });
 
     //JSON PETITION
@@ -103,7 +104,7 @@ export const FormProvider = ({ children }) => {
   };
 
   return (
-    <FormContext.Provider value={{ validarFormulario, loader, alert }}>
+    <FormContext.Provider value={{ validarFormulario, loader, alert, error }}>
       {children}
     </FormContext.Provider>
   );
