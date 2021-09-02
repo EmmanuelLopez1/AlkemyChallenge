@@ -1,0 +1,23 @@
+Hi guys, I'm doing an HTTP request to an address with the axios library, the problem is that first I tried to do it in the following way.
+
+axios({
+  method: "post",
+  url: url,
+  data: JSON.stringify({
+    email: "challenge@alkemy.org",
+    password: "react",
+  }),
+})
+  .then((res) => {
+    console.log(res);
+    console.log(typeof res.config.data);
+    console.log(res.config.data);
+  })
+  .catch((error) => {
+    console.log(error.response);
+    console.log(typeof error.response.config.data);
+    console.log(error.response.config.data);
+  });
+Using JSON.PARSE in the data attribute to pass the argument like a string, but this was giving me the next error, 401.
+
+Tags
