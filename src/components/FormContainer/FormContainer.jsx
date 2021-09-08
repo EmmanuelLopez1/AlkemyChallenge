@@ -1,16 +1,21 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Form } from "../Form/Form";
 import { FormContext } from "../../context/FormContext";
-import {Alert} from "../Alert/Alert"
+import { Alert } from "../Alert/Alert"
 import { Loader } from "../Loader/Loader";
+import { Home } from "../Home/Home"
 
 export const FormContainer = () => {
-    const { loader, alert, error } = useContext(FormContext);
+    const { loader, alert, error, token } = useContext(FormContext);
     const messageError = `Error ${error} al cargar la pagina.`
+
+    useEffect(() => {
+        console.log(token);
+    })
 
     return (
     <>
-        {alert ? <Alert color='danger' message={messageError}/> : loader ? <Loader/> : <Form />}
+        {alert ? <Alert message={messageError}/> : loader ? <Loader/> : token ? <Home/> : <Form />}
     </>
     )
 };

@@ -6,6 +6,7 @@ export const FormProvider = ({ children }) => {
   const [loader, setLoader] = useState(false)
   const [alert, setAlert] = useState(false)
   const [error, setError] = useState()
+  const [token, setToken] = useState()
 
   const validarFormulario = (email, password, mailWarning, passwordWarning) => {
     const emailValue = email.current.value;
@@ -66,15 +67,17 @@ export const FormProvider = ({ children }) => {
         method: "post",
         url: url,
         data:  {
-          email: "challenge@alkemy.or",
+          email: "challenge@alkemy.org",
           password: "react",
         },
       })
         .then((res) => {
-          setLoader(false)
+          const token = res.data.token
+          localStorage.setItem("token", token)
+          setToken(true)
         })
         .catch((err) => {
-          console.log(err.response.status);
+          setToken(false)
           setAlert(true)
           setError(err.response.status)
         })
@@ -104,7 +107,7 @@ export const FormProvider = ({ children }) => {
   };
 
   return (
-    <FormContext.Provider value={{ validarFormulario, loader, alert, error }}>
+    <FormContext.Provider value={{ validarFormulario, loader, alert, error, token }}>
       {children}
     </FormContext.Provider>
   );
