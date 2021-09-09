@@ -73,6 +73,7 @@ export const FormProvider = ({ children }) => {
       })
         .then((res) => {
           const token = res.data.token
+          console.log(token);
           localStorage.setItem("token", token)
           setToken(true)
         })

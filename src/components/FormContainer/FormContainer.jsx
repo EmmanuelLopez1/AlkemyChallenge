@@ -7,15 +7,13 @@ import { Home } from "../Home/Home"
 
 export const FormContainer = () => {
     const { loader, alert, error, token } = useContext(FormContext);
-    const messageError = `Error ${error} al cargar la pagina.`
+    const messageError = `Error ${error} al cargar la pagina, intente de nuevo mas tarde.`
 
-    useEffect(() => {
-        console.log(token);
-    })
+    
 
     return (
     <>
-        {alert ? <Alert message={messageError}/> : loader ? <Loader/> : token ? <Home/> : <Form />}
+        {alert ? <Alert message={messageError} color='danger' messageColor='white'/> : loader ? <Loader/> : token ? <Home/> : <Form />}
     </>
     )
 };
